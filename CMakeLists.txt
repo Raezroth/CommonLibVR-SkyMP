@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.19)
 option(SKSE_SUPPORT_XBYAK "Enables trampoline support for Xbyak." OFF)
 
 project(
-	CommonLibSSE
+	CommonLibVR
 	LANGUAGES CXX
 )
 
@@ -29,7 +29,7 @@ add_library(
 	STATIC
 	${SOURCES}
 	.clang-format
-	CommonLibSSE.natvis
+	CommonLibVR.natvis
 )
 
 add_library("${PROJECT_NAME}::${PROJECT_NAME}" ALIAS "${PROJECT_NAME}")
